@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+  <!--  <test verbose="2" preserve-order="true" name="C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/TestngConcepts"><classes> -->
+    <test name="Chrome browser">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="com.bridgelabz.testng.test.JavaScriptExecutor">
+                <methods>
+                    <include name="execute"/>
+                </methods>
+            </class>
+        </classes>
+        </test>
+    <test name="Firefox browser">
+        <parameter name="browser" value="FireFox"></parameter>
+        <classes>
+            <class name="com.bridgelabz.testng.test.Robot">
+                <methods>
+                    <include name="usingRobotClass"/>
+                 </methods>
+            </class>
+        </classes>
+    </test>
+<!--    <test name="browser Chrome">-->
+<!--        <parameter name="browser" value="Chrome"></parameter>-->
+<!--        <classes>-->
+<!--        <class name="com.bridgelabz.testng.test.WebinarScreen">-->
+<!--            <methods>-->
+<!--                <include name="toLaunchWebinarPage"/>-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--    </test>-->
+</suite>
